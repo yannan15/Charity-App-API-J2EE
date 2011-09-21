@@ -1,0 +1,93 @@
+span{
+	line-height:1.8;
+}
+#main_nav{
+	margin:0 auto;
+	padding:0px;
+	height:400px;
+}
+#main_content{
+	margin:0 auto;
+	padding:0px;
+	height:800px;
+}
+#main_nav_mask{
+	position:absolute;
+	margin-top:-50px;
+	padding:0px;
+}
+#main_nav_text{
+	position:relative;;
+	margin-top:-102px;
+}
+#main_nav_text ul{
+	margin:0 auto;
+	padding:0px;
+	list-style:none;
+}
+#main_nav_text ul li{
+	width:240px;
+	height:108px;
+	float:left;
+	background:url(../image/mask_big_ext.png) no-repeat;
+}
+#main_nav_text ul li:hover{
+	cursor:pointer;
+}
+#main_nav_text ul li a{
+	font-size:13px;
+	color:#FFF;
+}
+#main_nav_text ul li a:hover{
+	text-decoration:none;
+}
+#fieldset{
+	margin:0 30px;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+#brandImage{
+	margin:0 auto;
+	padding:0px;
+	background:url(../image/panel_shouye.png) no-repeat;
+	height:500px;
+	margin-left:-15px;
+}
+#brandImage ul{
+	margin:0 auto;
+	padding:0px;
+	float:left;
+	margin-top:30px;
+	margin-left:-18px;
+	margin-left:23px;
+}
+#brandImage ul li{
+	list-style:none;
+	width:105px;
+	height:32px;
+	
+	float:left;
+	margin-left:20px;
+}
+#brandLink{
+	margin:0 auto;
+	padding:0px;
+}
+#main_left{
+	margin:0 auto;
+	padding:0px;
+	width:720px;
+	height:560px;
+	float:left;
+	color:#4d4d4d;
+	margin-top:-8px;
+}
+#main_right{
+	margin:0 auto;
+	padding:0px;
+	float:left;
+	background-color:#D5D5D5;
+	height:560px;
+	width:238px;
+	margin-top:-8px;
+}

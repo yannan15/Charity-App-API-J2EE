@@ -1,0 +1,82 @@
+#main_nav{
+	margin:0 auto;		
+	float:left;
+}
+#main_content{
+	margin:0 auto;
+	padding:0px;
+	background-color:#FFF;
+	margin-top:75px;
+	margin-bottom:30px;
+	float:left;
+	padding-bottom:30px;
+}
+#main_nav_mask{
+	position:absolute;
+	margin-top:-50px;
+	padding:0px;
+}
+#main_nav_text{
+	position:absolute;
+	margin-top:-102px;
+	padding:0px;
+}
+#main_nav_text ul{
+	margin:0 auto;
+	padding:0px;
+	padding-right:20px;
+	list-style:none;
+}
+#main_nav_text ul li{
+	width:242px;
+	height:108px;
+	float:left;
+	background:url(../image/mask_big_ext.png) no-repeat;
+}
+#main_nav_text ul li:hover{
+	cursor:pointer;
+}
+#main_nav_text ul li a{
+	font-size:16px;
+	color:#FFF;
+}
+#main_nav_text ul li a:hover{
+	text-decoration:none;
+}
+#fieldset{
+	margin:0 30px;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+#brandImage{
+	margin:0 auto;
+	padding:0px;
+	background:url(../image/panel_shouye.png) no-repeat;
+	height:500px;
+	margin-left:-15px;
+}
+#brandImage tr{
+}
+#brandImage td{
+	border:#ea5404 solid;
+	width:150px;
+}
+#brandLink{
+	margin:0 auto;
+	padding:0px;
+}
+
+#main_left{
+	margin:0 auto;
+	padding:0px;
+	width:240px;
+	float:left;
+}
+#main_right{
+	margin:0 auto;
+	padding:0px;
+	float:left;
+	background-color:#FFF;
+	width:700px;
+	padding-right:20px;
+}

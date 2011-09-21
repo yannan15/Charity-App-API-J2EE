@@ -1,0 +1,83 @@
+#main_nav{
+	margin:0 auto;
+	background:url(../image/banner_product.png) scroll;
+	float:left;
+}
+#main_content{
+	margin:0 auto;
+	padding:0px;
+	margin-bottom:30px;
+	float:left;
+}
+#main_nav_mask{
+	position:absolute;
+	margin-top:-50px;
+	padding:0px;
+}
+#main_nav_text{
+	position:absolute;
+	margin-top:-102px;
+	padding:0px;
+}
+#main_nav_text ul{
+	margin:0 auto;
+	padding:0px;
+	list-style:none;
+}
+#main_nav_text ul li{
+	width:242px;
+	height:108px;
+	float:left;
+	background:url(../image/mask_big_ext.png) no-repeat;
+}
+#main_nav_text ul li:hover{
+	cursor:pointer;
+}
+#main_nav_text ul li a{
+	font-size:16px;
+	color:#FFF;
+}
+#main_nav_text ul li a:hover{
+	text-decoration:none;
+}
+#fieldset{
+	margin:0 30px;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+#brandImage{
+	margin:0 auto;
+	padding:0px;
+	background:url(../image/panel_shouye.png) no-repeat;
+	height:500px;
+	margin-left:-15px;
+}
+#brandImage tr{
+}
+#brandImage td{
+	border:#ea5404 solid;
+	width:150px;
+}
+#brandLink{
+	margin:0 auto;
+	padding:0px;
+}
+
+.main_left{
+	margin:0 auto;
+	padding:0px;
+	width:840px;
+	float:left;
+	background-color:#FFF;
+	padding-left:30px;
+	padding-bottom:30px;
+	margin-top:30px;
+}
+#main_right{
+	margin:0 auto;
+	padding:0px;
+	float:left;
+	width:120px;
+	overflow:visible;
+	margin-top:30px;
+}

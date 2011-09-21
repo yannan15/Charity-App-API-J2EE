@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="CharityServer"
+  id="myeclipse.1316497073697"
+  context-root="/CharityServer"
+  j2ee-spec="5.0"
+  archive="CharityServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

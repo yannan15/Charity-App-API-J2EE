@@ -1,0 +1,88 @@
+#main_nav{
+	margin:0 auto;
+	padding:0px;
+	height:300px;
+}
+#main_content{
+	margin:0 auto;
+	padding:0px;
+	height:800px;
+}
+#main_nav_mask{
+	position:absolute;
+	margin-top:-50px;
+	padding:0px;
+}
+#main_nav_text{
+	position:absolute;
+	margin-top:-40px;
+	padding:0px;
+	margin-left:-118px;
+}
+#main_nav_text ul{
+	margin:0 auto;
+	padding:0px;
+	list-style:none;
+}
+#main_nav_text ul li{
+	padding-left:180px;
+	float:left;
+}
+#main_nav_text ul li a{
+	font-size:15px;
+	color:#FFF;
+}
+#main_nav_text ul li a:hover{
+	text-decoration:none;
+	color:#ea5404;
+}
+#fieldset{
+	margin:0 30px;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+#brandImage{
+	margin:0 auto;
+	padding:0px;
+	margin-left:-15px;
+	margin-top:-25px;
+	margin-bottom:20px;
+	float:left;
+}
+#brandImage ul{
+	margin:0 auto;
+	padding:0px;
+	float:left;
+	margin-top:40px;
+	
+	margin-left:25px;
+}
+#brandImage ul li{
+	list-style:none;
+	width:105px;
+	height:32px;
+	
+	float:left;
+	margin-left:40px;
+}
+#brandLink{
+	margin:0 auto;
+	padding:0px;
+	margin-left:30px;
+	margin-top:20px;
+	font-size:12px;
+}
+#brandLink ul{
+	margin:0 auto;
+	padding:0px;
+	float:left;
+	margin-top:20px;
+	margin-left:23px;
+}
+#brandLink ul li{
+	list-style:none;
+	height:32px;
+	float:left;
+	margin-left:5px;
+	width:220px;
+}

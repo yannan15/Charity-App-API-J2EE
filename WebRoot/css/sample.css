@@ -1,0 +1,72 @@
+#main_nav{
+	margin:0 auto;
+	padding:0px;
+	height:400px;
+}
+#main_content{
+	margin:0 auto;
+	padding:0px;
+	height:800px;
+}
+#main_nav_mask{
+	position:absolute;
+	margin-top:-50px;
+	padding:0px;
+}
+#main_nav_text{
+	position:absolute;
+	margin-top:-36px;
+	padding:0px;
+	margin-left:-150px;
+}
+#main_nav_text ul{
+	margin:0 auto;
+	padding:0px;
+	list-style:none;
+}
+#main_nav_text ul li{
+	padding-left:190px;
+	float:left;
+}
+#main_nav_text ul li a{
+	font-size:16px;
+	color:#FFF;
+}
+#main_nav_text ul li a:hover{
+	text-decoration:none;
+	color:#ea5404;
+}
+#fieldset{
+	margin:0 30px;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+#brandImage{
+	margin:0 auto;
+	padding:0px;
+	background:url(../image/panel_shouye.png) no-repeat;
+	height:500px;
+	margin-left:-15px;
+}
+#brandImage tr{
+}
+#brandImage td{
+	border:#ea5404 solid;
+	width:150px;
+}
+#brandLink{
+	margin:0 auto;
+	padding:0px;
+}
+#main_left{
+	margin:0 auto;
+	padding:0px;
+	width:724px;
+	float:left;
+	height:560px;
+}
+#main_right{
+	float:left;
+	margin:0 auto;
+	padding:0px;
+}
