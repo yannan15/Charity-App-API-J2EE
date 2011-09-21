@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="charity" database="charity" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="activity">
+      <Drawing expanded="true" location="618,545" dimensions="218,170" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="type" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="caption" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="comment" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="client_created" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BIT" size="1" />
+        </Column>
+        <Column name="timestamp" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="TIMESTAMP" />
+        </Column>
+        <Column name="points" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="authority">
+      <Drawing expanded="true" location="0,805" dimensions="222,70" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="authority_desc" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="charity">
+      <Drawing expanded="true" location="258,0" dimensions="213,190" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="name" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="comment" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="extended_url" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="logo" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="logo_grid" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="priority" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="effects" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="effect">
+      <Drawing expanded="true" location="269,290" dimensions="191,150" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="points" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="icon" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="title" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="message" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="charities" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="location">
+      <Drawing expanded="true" location="0,0" dimensions="213,290" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="type" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="name" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="comment" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="address" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="latitude" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="FLOAT" size="12" />
+        </Column>
+        <Column name="longitude" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="FLOAT" size="12" />
+        </Column>
+        <Column name="radius" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="points" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="count" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="logo" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="extended_url" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="regular" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="news-item">
+      <Drawing expanded="true" location="0,930" dimensions="213,110" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="caption" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="extended_url" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="timestamp" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="role_authority">
+      <Drawing expanded="true" location="74,575" dimensions="147,90" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="role" primary_key="false" foreign_key="true" required="true" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="authority" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="role">
+      <Drawing expanded="true" location="322,795" dimensions="202,90" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="role_name" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="role_desc" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="shared_profile">
+      <Drawing expanded="true" location="9,390" dimensions="194,110" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="nickname" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="points" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="last_seen" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="user">
+      <Drawing expanded="true" location="374,545" dimensions="199,150" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="username" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="password" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="VARCHAR" size="20" />
+        </Column>
+        <Column name="nickname" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+        <Column name="points" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="role" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="INT" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="voucher">
+      <Drawing expanded="true" location="258,930" dimensions="205,70" />
+      <Columns>
+        <Column name="id" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INT" size="10" />
+        </Column>
+        <Column name="voucher_url" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="255" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="effects">
+      <Details primary_table="effect" foreign_table="charity">
+        <PrimaryKeys>
+          <ColumnName name="id" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="effects" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="effect_ibfk_3">
+      <Details primary_table="charity" foreign_table="effect">
+        <PrimaryKeys>
+          <ColumnName name="id" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="charities" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="regular">
+      <Details primary_table="shared_profile" foreign_table="location">
+        <PrimaryKeys>
+          <ColumnName name="id" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="regular" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="role_authority_ibfk_1">
+      <Details primary_table="role" foreign_table="role_authority">
+        <PrimaryKeys>
+          <ColumnName name="id" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="role" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="role_authority_ibfk_2">
+      <Details primary_table="authority" foreign_table="role_authority">
+        <PrimaryKeys>
+          <ColumnName name="id" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="authority" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="user_ibfk_1">
+      <Details primary_table="role" foreign_table="user">
+        <PrimaryKeys>
+          <ColumnName name="id" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="role" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+
